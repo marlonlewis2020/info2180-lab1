@@ -1,13 +1,27 @@
 :root {
     --h1-color: #38B2AC;
     --h2-color: #5A67D8;
+    --captions: gray;
+    --line-indent: 15px;
+    --vertical-padding: 20px;
+    --image-size: 200px;
+}
+
+body {
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
 }
 
 h1 {
     font-size: 24px;
     color: var(--h1-color);
 }
-
 
 h2 {
     font-size: 21px;
@@ -16,4 +30,88 @@ h2 {
 
 p {
     font-size: 18px;
+}
+
+img {
+    width: 100%;
+}
+
+.caption {
+    font-size: 12px;
+    color: var(--captions);
+}
+
+a {
+    text-decoration: none;
+    color: var(--h1-color);
+}
+
+a:hover {
+    font-size: 12px;
+    text-decoration: overline;
+    color: var(--h2-color);
+}
+
+h2, #bio, #copy {
+    padding-left: var(--line-indent);
+}
+
+iframe {
+    width: 99.7%;
+    height: 850px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.gap-div, #nav-bar {
+    padding-top: 2px;
+    height: 45px;
+    background-color: black;
+}
+
+#main-div {
+    height: 400px;
+}
+
+.title {
+    text-decoration: underline;
+    text-decoration-color: var(--h1-color);
+}
+
+#my_pic {
+    float: left;
+    width: var(--image-size);
+    height: var(--image-size);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#bio {
+    width: 50%;
+    margin-left: 220px;
+    margin-top: var(--line-indent);
+}
+
+#copy {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: var(--vertical-padding);
+    padding-bottom: var(--vertical-padding);
+}
+
+footer {
+    background-color: var(--h2-color);
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#assignment {
+    width: 85%;
+    margin-left: var(--line-indent);
 }

@@ -12,17 +12,50 @@
  <header>
      <h1>INFO2180 Lab 1</h1>
      <p>This is a simple webpage for Lab 1 of INFO2180.</p>
+     <div id="nav-bar">
+        <ul>
+            <a href="#profile"><li>Profile</li></a>
+            <a href="#div-2"><li>Assignment</li></a>
+        </ul>
+    </div>
+     <img src="images/web_dev.jpg" alt="graphical image of full stack web developments languages"/>
+     <p class="caption"><em>full stack development - <a href="https://www.gnisoftsolutions.com/" target="_blank">(image from http://www.gnisoftsolutions.com)</a></em></p>
+     
  </header>
  <main>
-    <h2>Marlon Lewis</h2>
-    <p id="bio">Web development is an interesting field for me, as it gives me the opportunity to
-    explore and utilize the web to create dynamic, versatile and powerful solutions to 
-    various needs that exst in a family, organization, nation and even worldwiide. I am 
-    specifically interested int the use of software, specifically web software to connect
-    people together and solve problems pertaning to employment, empowerment and community.</p>
+    <div id="profile" class="gap-div">
+        <h2>Profile and Assignment</h2>
+    </div>
+    <div class="title">
+        <h2>Profile</h2>
+    </div>
+    <div id="main-div">
+        <img id="my_pic" src="images/MyPicture.jpg" alt="picture of Marlon Lewis"/>
+        <div id="">
+            <h2>Marlon Lewis</h2>
+            <p id="bio">
+                Web development is an interesting field for me, as it gives me the opportunity to
+                explore and utilize the web to create dynamic, versatile and powerful solutions to 
+                various needs that exst in a family, organization, nation and even worldwide. I am 
+                specifically interested int the use of software, specifically web software to connect
+                people together and solve problems pertaning to employment, empowerment and community.</p>
+            <br/>
+            <p id="assignment">
+                I am currenty enrolled at the Univesity of the West Indies, pusuing my BSc in COmputer Scince, 
+                hopefully with minors in Information Technology (I.T) and Management Studies. One of my I.T courses
+                I am enrolled in in INFO2180 - which deals with Web Development. As part of this course, I am required 
+                to complete numerous course work as assignments and this is one of them. <br/><br/>This assignment teaches us some 
+                of the fundamentals of github utilization and building a webpage using only HTML and CSS. The details are below:
+            </p>
+        </div>
+    </div>
+    <div id="div-2" class="title">
+        <h2>Lab 1 Assignment</h2>
+        <iframe src="info2180-lab1.pdf"></iframe>
+    </div>
  </main>
  <footer>
- <p>Copyright &copy; 2021 Marlon Lewis.</p> 
+ <p id="copy">Copyright &copy; 2021 Marlon Lewis.</p> 
  </footer>
 </body>
 </html>
